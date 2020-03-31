@@ -1,0 +1,11 @@
+$color: #008080;
+$font: 15px;
+$wcolor: white;
+
+body {
+  background-color: $color !important;
+}
+p {
+  font-size: $font !important;
+  color: $wcolor !important;
+}

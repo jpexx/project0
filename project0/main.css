@@ -1,27 +1,19 @@
-body {
+/* body {
   background-color: #008080 !important;
-}
-body {
   color: #00ffff !important;
-}
+} */
 
 img {
   border-radius: 8px;
   border-style: ridge;
+  margin-top: 20px;
+  margin-bottom: 50px;
 }
+
 .container {
   text-align: center;
 }
-.column {
-  float: center;
-  width: 33.33%;
-}
 
-.h1 {
-  text-align: center;
-  color: red;
-  font-family: fantasy important;
-}
 ul {
   border: 1px solid #e7e7e7;
   background-color: #483d8b;
@@ -30,6 +22,16 @@ ul {
 li a {
   color: #00ffff;
 }
+
+#para2 {
+  background-color: darkgreen;
+}
+
+p {
+  border: 1px solid #e7e7e7;
+  background-color: #483d8b;
+}
+
 /*Music Table */
 table {
   border-style: outset;
@@ -44,38 +46,40 @@ td {
 tr:nth-child(even) {
   background-color: darkcyan;
 }
-/* NAVIGATION */
-.logo {
-  cursor: pointer;
-}
-.nav_links {
-  list-style: none;
-}
+
+/* NAVIGATION MENU */
+/* ps I took most of the code below from w3 schools */
+
 .nav_links li {
   display: inline-block;
   padding: 0px 20px;
 }
-
-.nav_links li {
-  transition: all 0.3s ease 0s;
+.nav_links {
+  overflow: hidden;
+  background-color: #333;
 }
-.nav_links li a:hover {
-  color: 0088a9;
-}
-
-button {
-  padding: 9px 25px;
-  background-color: rgba(0, 136, 169, 1);
-  border: none;
-  border-radius: 50px;
-  cursor: transition all 0.3s ease 0s;
+.nav_links a {
+  /* float: left; */
+  display: block;
+  color: #f2f2f2;
   text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
-button:hover {
-  background-color: green;
+.nav_links a:hover {
+  background-color: #ddd;
+  color: black;
+}
+/* Do you know why this isn't working? */
+@media screen and (max-width: 600px) {
+  .nav_links li {
+    float: none;
+    width: 100%;
+  }
 }
 
-p {
-  border: 1px solid #e7e7e7;
-  background-color: #483d8b;
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: black !important;
+  }
 }
