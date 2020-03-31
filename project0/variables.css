@@ -2,9 +2,17 @@ body {
   background-color: #008080 !important;
 }
 
-p {
+.success, .fail {
   font-size: 15px !important;
   color: white !important;
+}
+
+.fail {
+  color: red !important;
+}
+
+.success {
+  color: green !important;
 }
 
 /*# sourceMappingURL=variables.css.map */

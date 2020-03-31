@@ -1,11 +1,21 @@
 $color: #008080;
 $font: 15px;
 $wcolor: white;
+$rcolor: red;
+$gcolor: green;
 
 body {
   background-color: $color !important;
 }
-p {
+%message {
   font-size: $font !important;
   color: $wcolor !important;
+}
+.fail {
+  @extend %message;
+  color: $rcolor !important;
+}
+.success {
+  @extend %message;
+  color: $gcolor !important;
 }
